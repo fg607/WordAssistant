@@ -1,0 +1,155 @@
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+    <LinearLayout
+        android:id="@+id/layout_wordinfo"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <!--SpeakLayout-->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/grayWhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="30sp"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_speak_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textview_speakUK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:id="@+id/imageview_voiceUK"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/textview_speakUK"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:background="@drawable/voice_bg"/>
+
+                    <TextView
+                        android:id="@+id/textview_speakUS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/imageview_voiceUK"
+                        android:textSize="16sp"/>
+
+
+                    <ImageView
+                        android:id="@+id/imageview_voiceUS"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/textview_speakUS"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:background="@drawable/voice_bg"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textview_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--ParaphraseLayout-->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/grayWhite"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/paraphrase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical"/>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!--ChangeLayout-->
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

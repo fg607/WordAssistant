@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hardwork.fg607.wordassistant.view.ReciteFragment">
+
+
+    <include layout="@layout/wordinfo_layout"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+    <include layout="@layout/recite_bottom_layout"/>
+
+</RelativeLayout>

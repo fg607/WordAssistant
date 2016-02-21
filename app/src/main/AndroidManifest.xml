@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hardwork.fg607.wordassistant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.hardwork.fg607.wordassistant.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name="com.hardwork.fg607.wordassistant.MainActivity_"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hardwork.fg607.wordassistant.view.ReciteActivity"
+            android:label="@string/title_activity_recite"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hardwork.fg607.wordassistant.view.ChooseWordActivity"
+            android:label="@string/title_activity_choose_word"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hardwork.fg607.wordassistant.view.TestStyleActivity"
+            android:label="@string/title_activity_recite_style"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hardwork.fg607.wordassistant.view.TestScoreActivity"
+            android:label="@string/title_activity_test_score"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

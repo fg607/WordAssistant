@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.hardwork.fg607.wordassistant.view.ChooseWordActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+<!--    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        appicon:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/cet4_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/chooseword_color"
+                android:visibility="gone"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="CET4"/>
+
+                <ImageView
+                    android:id="@+id/cet4_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/quickaction2_arrow_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/whiteGray"/>
+
+
+            </RelativeLayout>
+
+
+
+
+            <ListView
+                android:id="@+id/cet4_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </ListView>
+
+
+            <RelativeLayout
+                android:id="@+id/cet6_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/chooseword_color"
+                android:visibility="gone"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="CET6"/>
+
+                <ImageView
+                    android:id="@+id/cet6_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/quickaction2_arrow_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/whiteGray"/>
+
+
+            </RelativeLayout>
+
+
+
+            <ListView
+                android:id="@+id/cet6_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </ListView>
+
+
+            <RelativeLayout
+                android:id="@+id/ky_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/chooseword_color"
+                android:visibility="gone"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="考研"/>
+
+                <ImageView
+                    android:id="@+id/ky_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/quickaction2_arrow_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/whiteGray"/>
+
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/ky_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </ListView>
+
+
+            <RelativeLayout
+                android:id="@+id/gre_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/chooseword_color"
+                android:visibility="gone"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="GRE"/>
+
+                <ImageView
+                    android:id="@+id/gre_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/quickaction2_arrow_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/whiteGray"/>
+
+
+            </RelativeLayout>
+
+
+            <ListView
+                android:id="@+id/gre_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </ListView>
+
+
+            <RelativeLayout
+                android:id="@+id/toefl_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/chooseword_color"
+                android:visibility="gone"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="TOEFL"/>
+
+                <ImageView
+                    android:id="@+id/toefl_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/quickaction2_arrow_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/whiteGray"/>
+
+
+            </RelativeLayout>
+
+
+            <ListView
+                android:id="@+id/toefl_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </ListView>
+
+        </LinearLayout>
+
+<!--    </android.support.v4.widget.NestedScrollView>-->
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_save" />
+
+</android.support.design.widget.CoordinatorLayout>

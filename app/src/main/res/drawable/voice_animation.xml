@@ -1,0 +1,16 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/supreme_volume0" android:duration="100"/>
+    <item android:drawable="@drawable/supreme_volume1" android:duration="100"/>
+    <item android:drawable="@drawable/supreme_volume2" android:duration="100"/>
+    <item android:drawable="@drawable/supreme_volume3" android:duration="100"/>
+    <item android:drawable="@drawable/supreme_volume2" android:duration="100"/>
+    <item android:drawable="@drawable/supreme_volume1" android:duration="100"/>
+    <item android:drawable="@drawable/supreme_volume0" android:duration="100"/>
+    <item android:drawable="@drawable/supreme_volume1" android:duration="100"/>
+    <item android:drawable="@drawable/supreme_volume2" android:duration="100"/>
+    <item android:drawable="@drawable/supreme_volume3" android:duration="100"/>
+</animation-list>

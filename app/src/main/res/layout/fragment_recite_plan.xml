@@ -1,0 +1,93 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<!--    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_statistics"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:gravity="left"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="背记计划"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/no_plan_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/plan_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+<!--    </android.support.v4.widget.NestedScrollView>-->
+
+
+    <LinearLayout
+        android:id="@+id/layout_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="查看单词统计"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:clickable="true"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/white"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hardwork.fg607.wordassistant.view.TranslateFragment">
+
+
+    <include layout="@layout/daywords_layout"/>
+
+    <include layout="@layout/wordinfo_layout"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textview_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_retry"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/button_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="重试"/>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+   <!--  &lt;!&ndash;   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_reminder"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>&ndash;&gt;
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/blue"
+                android:layout_gravity="center_vertical"
+                android:text="Hi, do you remember ?"/>
+        </LinearLayout>
+-->
+        <FrameLayout
+            android:id="@+id/layout_remind_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
